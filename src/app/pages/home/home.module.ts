@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { PagesRoutingModule } from '../pages-routing.module';
+import { ParallaxStarBackgroundModule } from 'src/app/components/parallax-star-background/parallax-star-background.module';
 
 
 
@@ -9,7 +10,8 @@ import { PagesRoutingModule } from '../pages-routing.module';
   declarations: [HomeComponent],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ParallaxStarBackgroundModule
   ],
   exports: [
     HomeComponent

@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ComponentRoutingModule } from '../components-routing.module';
+import { ParallaxStarBackgroundComponent } from './parallax-star-background.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ParallaxStarBackgroundComponent],
   imports: [
-    CommonModule,
-    ComponentRoutingModule
+    CommonModule
+  ],
+  exports: [
+    ParallaxStarBackgroundComponent
   ]
 })
 export class ParallaxStarBackgroundModule { }

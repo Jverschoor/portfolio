@@ -124,5 +124,10 @@
   "defaultProject": "portfolio",
   "cli": {
     "analytics": "165f46a9-acc9-46d1-8873-d848cf4c6b99"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "sass"
+    }
   }
 }
