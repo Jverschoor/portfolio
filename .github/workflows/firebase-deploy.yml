@@ -26,7 +26,7 @@ jobs:
       - name: Run Tests
         env:
           CI: true
-        run: npm test
+        run: CI=true npm test
       - name: Build
         run: npm run prod-build
       - name: Archive Production Artifact
