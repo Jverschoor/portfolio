@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: build
-          path: build
+          path: dist/portfolio
   deploy:
       name: Deploy
       needs: build
