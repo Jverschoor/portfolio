@@ -8,6 +8,9 @@ import { ExperienceComponent } from './experience.component';
   declarations: [ExperienceComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ExperienceComponent
   ]
 })
 export class ExperienceModule { }
