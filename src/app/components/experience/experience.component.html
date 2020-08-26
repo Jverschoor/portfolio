@@ -1,20 +1,14 @@
 <div class="experience">
     <div class="container-sm">
         <div class="row">
-            <div *ngFor="let number of [1,2,3]" class="col-lg-4">
+            <div *ngFor="let exp of expcontent" class="col-lg-4">
                 <!-- Image -->
-                <img src="./../../../assets/angular.svg">
+                <img [src]="exp.img">
                 <div class="exp-content">
                     <!-- Title -->
-                    <p class="h2">Angular</p>
+                    <p class="h2">{{exp.title}}</p>
                     <!-- Description -->
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard
-                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to
-                        make a type specimen
-                    </p>
+                    <p>{{exp.description}}</p>
                 </div>
             </div>
         </div>
