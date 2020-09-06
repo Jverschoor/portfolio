@@ -1,0 +1,20 @@
+<div class="experience">
+    <div class="container-sm experience-container">
+        <div class="row">
+            <div *ngFor="let exp of expcontent" class="col-lg-4 hidden" [style.animation-delay.s]="exp.animationDelay">
+                <div class="row">
+                    <div class="img col-lg-12 col-md-3 col-sm-12 " >
+                        <!-- Image -->
+                        <img [src]="exp.img">
+                    </div>
+                    <div class="col-lg-12 col-md-9 col-sm-12">
+                        <!-- Title -->
+                        <p class="h2">{{exp.title}}</p>
+                        <!-- Description -->
+                        <p>{{exp.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

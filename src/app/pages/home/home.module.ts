@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { PagesRoutingModule } from '../pages-routing.module';
 import { ParallaxStarBackgroundModule } from 'src/app/components/parallax-star-background/parallax-star-background.module';
+import { ExperienceModule } from 'src/app/components/experience/experience.module';
+import { GradientHeaderModule } from 'src/app/components/basic-header/basic-header.module';
 
 
 
@@ -11,7 +13,9 @@ import { ParallaxStarBackgroundModule } from 'src/app/components/parallax-star-b
   imports: [
     CommonModule,
     PagesRoutingModule,
-    ParallaxStarBackgroundModule
+    ParallaxStarBackgroundModule,
+    ExperienceModule,
+    GradientHeaderModule
   ],
   exports: [
     HomeComponent
