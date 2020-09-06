@@ -11,7 +11,7 @@ import { experience } from './experience-placeholder';
   }
 })
 export class ExperienceComponent implements OnInit, AfterViewInit {
-  expcontent: { title: string, img: string, description: string }[];
+  expcontent: { title: string, img: string, description: string, animationDelay: string }[];
   hiddenElements;
   windowHeight;
   initCalls = 0;
@@ -22,9 +22,7 @@ export class ExperienceComponent implements OnInit, AfterViewInit {
     for (var i = 0; i < this.hiddenElements.length; i++) {
       var element = this.hiddenElements[i];
       var positionFromTop = this.hiddenElements[i].getBoundingClientRect().top;
-      console.log(positionFromTop - this.hiddenElements);
       if (positionFromTop - this.windowHeight <= 0) {
-        console.log("element found!");
         element.classList.add('fade-in-element');
         element.classList.remove('hidden');
       }
